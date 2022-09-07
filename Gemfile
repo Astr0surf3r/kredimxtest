@@ -62,3 +62,6 @@ gem 'mini_magick'
 gem 'rqrcode', '~> 2.0'
 gem 'figaro'
 gem 'cloudinary'
+
+# HEROKU ENVIRONMENT
+gem 'net-smtp'
