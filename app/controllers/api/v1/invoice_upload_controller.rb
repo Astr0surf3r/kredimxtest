@@ -13,7 +13,7 @@ module Api
           render json: { info: 'invoices added to database' }.to_json, status: :ok
         rescue Exception => e
           Rails.logger.debug { "Something Went Wrong #{e}" }
-          render json: { warning: 'something went wrong' }.to_json, status: :ok
+          render json: { warning: "something went wrong' #{e}" }.to_json, status: :ok
         end
       end
 
