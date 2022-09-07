@@ -64,4 +64,6 @@ gem 'figaro'
 gem 'cloudinary'
 
 # HEROKU ENVIRONMENT
-gem 'net-smtp'
+gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
