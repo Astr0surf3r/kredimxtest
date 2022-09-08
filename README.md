@@ -40,7 +40,7 @@ To check all the invoices imported check the follow endpoint
 
 `https://kredimxtest.herokuapp.com/api/v1/invoices`
 
-### NOTE: with POSTMAN is not necessary the authentication because uses a token authentication by default postman collection as global env variable
+### NOTE: with POSTMAN is not necessary the authentication because uses a global env variable token by POSTMAN collection
 
 # Part II
 
