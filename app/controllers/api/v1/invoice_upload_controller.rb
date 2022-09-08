@@ -4,7 +4,7 @@ module Api
   module V1
     class InvoiceUploadController < Api::ApplicationController
       def create
-        @files = params[:files]
+        files = params[:files]
         begin
           files.each do |file|
             create_invoice(file)
