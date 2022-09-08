@@ -3,7 +3,7 @@
 
 ## ACCORDING THE ASSESSMENT PART II (a3 directory) I CREATED A DEMO RAILS API on HEROKU
 
-link PRODUCTION REST API [KREDIMXTEST REST API](https://kredimxtest.herokuapp.com).
+link PRODUCTION REST API APP [KREDIMXTEST REST API](https://kredimxtest.herokuapp.com).
 
 ENDPOINTS
 
@@ -18,7 +18,29 @@ ENDPOINTS
 
 ### NOTE: original files repo assessment app [kredimx/rails-assessment](https://github.com/kredimx/rails-assessment/tree/seniors/assessments-a3/a3)
 
-### 
+## HOW TEST THE ENDPOINTS?
+
+inside the /public directory there are 2 files:
+
+- A. **20220811012132-invoices.zip**
+- B. **KREDIMX-TEST.postman_collection.json**
+
+In the REST API APP on HEROKU already exist a user 
+
+email: astr0surf3r@gmail.com
+password: monterrey2022
+
+to populate the database you can upload the unzip the invoices file in /public directory or create new ones with the follow command: 
+
+`rake xml:generate_invoice`
+
+to test the endpoint IMPORT in [**POSTMAN**](https://www.postman.com/product/rest-client/) the file named **KREDIMX-TEST.postman_collection.json** inside the `POSTMAN CLIENT`  so you can upload all the invoices 
+
+To check all the invoices imported check the follow endpoint
+
+`https://kredimxtest.herokuapp.com/api/v1/invoices`
+
+### NOTE: with POSTMAN is not necessary the authentication because uses a token authentication by default postman collection as global env variable
 
 # Part II
 

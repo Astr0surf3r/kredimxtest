@@ -101,35 +101,23 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/api/v1/amount-range?status=pending&emitter=sal&receiver=calimax&minimum_amount=100&maximum_amount=100000000",
+					"raw": "{{base_url}}/api/v1/issue-range?emitter=sal&emitted_at=08/09/2022",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"api",
 						"v1",
-						"amount-range"
+						"issue-range"
 					],
 					"query": [
-						{
-							"key": "status",
-							"value": "pending"
-						},
 						{
 							"key": "emitter",
 							"value": "sal"
 						},
 						{
-							"key": "receiver",
-							"value": "calimax"
-						},
-						{
-							"key": "minimum_amount",
-							"value": "100"
-						},
-						{
-							"key": "maximum_amount",
-							"value": "100000000"
+							"key": "emitted_at",
+							"value": "08/09/2022"
 						}
 					]
 				}
