@@ -23,6 +23,7 @@ module Api
         doc = Nokogiri::XML.parse(file)
         invoice = Invoice.find_or_create_by(
           invoice_uuid: doc.xpath('//invoice_uuid').text,
+          status: doc.xpath('//status').text,
           emitter: doc.xpath('//emitter//name').text,
           emitter_rfc: doc.xpath('//emitter//rfc').text,
           receiver: doc.xpath('//receiver//name').text,
