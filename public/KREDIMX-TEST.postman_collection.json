@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "d50b24a1-b943-4ddf-bb23-4be7c545feda",
+		"name": "KREDIMX-TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2794096"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/authenticate?email=astr0surf3r@gmail.com&password=mexico2010",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"authenticate"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "astr0surf3r@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "mexico2010"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RETRIEVE ALL INVOICES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/invoices",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RETRIEVE Invoices Amount CRITERIA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/amount-range?status=pending&emitter=sal&receiver=calimax&minimum_amount=100&maximum_amount=100000000",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"amount-range"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "pending"
+						},
+						{
+							"key": "emitter",
+							"value": "sal"
+						},
+						{
+							"key": "receiver",
+							"value": "calimax"
+						},
+						{
+							"key": "minimum_amount",
+							"value": "100"
+						},
+						{
+							"key": "maximum_amount",
+							"value": "100000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RETRIEVE Invoices Provider CRITERIA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/amount-range?status=pending&emitter=sal&receiver=calimax&minimum_amount=100&maximum_amount=100000000",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"amount-range"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "pending"
+						},
+						{
+							"key": "emitter",
+							"value": "sal"
+						},
+						{
+							"key": "receiver",
+							"value": "calimax"
+						},
+						{
+							"key": "minimum_amount",
+							"value": "100"
+						},
+						{
+							"key": "maximum_amount",
+							"value": "100000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE INVOICE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/invoices?status=pending&emitter=sal1&receiver=calimax2&amount=90000&user_id=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"invoices"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "pending"
+						},
+						{
+							"key": "emitter",
+							"value": "sal1"
+						},
+						{
+							"key": "receiver",
+							"value": "calimax2"
+						},
+						{
+							"key": "amount",
+							"value": "90000"
+						},
+						{
+							"key": "user_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE INVOICE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/invoices/10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"invoices",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT INVOICE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/v1/invoices/5?status=pending&emitter=sal1&receiver=calimax2&amount=90000&emitted_at=05/08/3022&user_id=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"invoices",
+						"5"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "pending"
+						},
+						{
+							"key": "emitter",
+							"value": "sal1"
+						},
+						{
+							"key": "receiver",
+							"value": "calimax2"
+						},
+						{
+							"key": "amount",
+							"value": "90000"
+						},
+						{
+							"key": "emitted_at",
+							"value": "05/08/3022"
+						},
+						{
+							"key": "user_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QR CODE INVOICE ENDPOINT",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UPLOAD XML INVOICES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files[]",
+							"type": "file",
+							"src": "/C:/Users/Astr0 Surf3r/Desktop/INVOICE-KREDIMX/4b03c0b2-aa3f-4309-81a9-28a7d4f67ce9.xml"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/process-invoices",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"process-invoices"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI2MDQ2OTZ9.HUU-PdtmvUebtzubRdJTpGz9a5Mu_AxT5nLW2yApq9g",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "kredimxtest.herokuapp.com",
+			"type": "string"
+		}
+	]
+}

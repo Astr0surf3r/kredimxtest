@@ -1,3 +1,25 @@
+
+## WHAT I DID
+
+## ACCORDING THE ASSESSMENT PART II (a3 directory) I CREATED A DEMO RAILS API on HEROKU
+
+link PRODUCTION REST API [KREDIMXTEST REST API](https://kredimxtest.herokuapp.com).
+
+ENDPOINTS
+
+- POST https://kredimxtest.herokuapp.com/api/v1/authenticate       LOGIN 
+- GET  https://kredimxtest.herokuapp.com/api/v1/invoices           LIST ALL INVOICES 
+- GET  https://kredimxtest.herokuapp.com/api/v1/amount-range       AMOUNT RANGE INVOICES
+- POST https://kredimxtest.herokuapp.com/api/v1/invoices           CREATE INVOICE
+- DEL  https://kredimxtest.herokuapp.com/api/v1/invoices/:id       DELETE INVOICE 
+- PUT  https://kredimxtest.herokuapp.com/api/v1/invoices/:id       EDIT INVOICE
+- GET  https://kredimxtest.herokuapp.com/api/v1/qrcode-invoice/:id QR CODE INVOICE ENDPOINT
+- POST https://kredimxtest.herokuapp.com/api/v1/qrcode-invoice/:id UPLOAD XML INVOICES
+
+### NOTE: original files repo assessment app [kredimx/rails-assessment](https://github.com/kredimx/rails-assessment/tree/seniors/assessments-a3/a3)
+
+### 
+
 # Part II
 
 This is the Rails starter code for take-home assessment.
